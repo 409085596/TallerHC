@@ -1,0 +1,29 @@
+\documentclass[letterpaper, 12pt, oneside]{article} %Para dar formato al documento
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\title{\Huge Bitácora 1 del Taller de Herramientas Computacionales}
+\author{Elías Jiménez Cruz, 409085596}
+\date{12/01/2019}
+
+\begin{document}
+	\maketitle
+	\paragraph{\\A continuación realizaremos una breve descripción de lo visto durante la primera clase. Vimos primero lo que es un sistema operativo, un sistema que administra el hardware de una computadora y que permite la interacción entre éste y el usuario. Existen varios sistemas operativos, entre los que destacan Windows, MacOs, Android y iOs cada uno creado para distintos propósitos y distintas arquitecturas de computadora. Sin embargo, uno de los más singulares hasta el momento es un sistema operativo llamado Linux, creado por Linus Torvalds, el cual es un sistema de código libre, es decir, un sistema en el que cualquier persona, sin un estricto ánimo de lucro, puede tener libre acceso al código del sistema para así mejorarlo y colaborar en su desarrollo. En consecuencia, al no ser necesario un ánimo de lucro, este tipo de sistemas operativos pueden ser usados por cualquier usuario sin tener que pagar necesariamente una licencia por él. De esta forma, Linux puede ser un sistema operativo gratuito, que es respaldado por miles de desarrolladores que día a día hacen de esta plataforma una mejor opción frente a otros sistemas.\\Ahora bien, como se dejó entrever, una de las características de Linux, que puede ser una de sus principales ventajas o uno de sus mayores inconvenientes, es que, al tener muchísimos desarrolladores, los objetivos o intereses perseguidos a la hora de desarrollar la plataforma no siempre es homogénea, lo que se traduce en el surgimiento de una gran variedad de versiones de este sistema, cuya única propiedad en común es el kernel, o el código interno sobre el cual se monta la interfaz gráfica, las características y las aplicaciones. Cada una de estas versiones es conocida como una distribución de Linux, que va a tener ciertas características que la harán especial, como puede ser su gran poder de procesamiento, su bajo consumo de recursos, su gran versatilidad para manejar distintos tipos de hardware, etc. No obstante, si bien hay una gran variedad de distribuciones, es sabido que existen tres distribuciones principales, de las cuales se derivan las demás: Ubuntu, Debian y Fedora. Estas versiones son sistemas operativos fuertes por sí mismos, aunque al ser tan versátiles no satisfacen todas las necesidades de todos los usuarios, pues para aquellos que deseen un sistema ligero que les permita adentrarse poco a poco al entorno de Linux, estos sistemas no son la mejor opción. Un ejemplo de este último tipo de sistema es Slax, un sistema operativo basado en Debian que apenas si consume 100 MB de memoria en su estado más básico, lo cual hasta lo vuelve ideal para usarse con las PC más antiguas. Entonces, hay una versión de Linux para todos los intereses de los usuarios.\\Algo a tener en cuenta es que las distribuciones de Linux son sistemas operativos que, en mayor o menor medida, requieren de cierto conocimiento en el manejo de su Shell interno, que es un intérprete de comandos, un programa que está a la espera de una instrucción para ejecutarla. Gráficamente es una pantalla negra en la que se teclean los comandos y se navega únicamente con el teclado, un proceder que evoca al manejo de las computadoras en los principios de los años ochenta. En Linux, este Shell se conoce como Bash y sus comandos sirven para administrar y utilizar el sistema, así como para navegar por sus directorios y visualizar sus archivos. Si bien la lista de comandos disponibles puede ser demasiado extensa, podemos resumirla en los comandos más promientes o esenciales:\\}
+	\begin{enumerate}
+		\item set: Muestra todas las variables de entorno del sistema, las cuales están en mayúsuculas. Una variable de entorno es aquella que determina una parte específica del sistema.
+		\item pwd: Indica la ruta del directorio en que alguien se encuentra.
+		\item cd "directorio": Traslada la ubicación al directorio escogido.
+		\item touch "archivo": Verifica la existencia de un archivo, y si no existe lo crea.
+		\item ls: Muestra los archivos y carpetas del directorio actual.
+		\item ./ "archivo": Ejecuta un archivo desde el directorio actual.
+		\item "Nombre de intérprete" "programa": Para correr un programa se usa esta estructura, primero se escribe el nombre del intéprete bajo cuyo lenguaje el programa a correr fue escrito, para entonces dejar un espacio y escribir el nombre del programa deseado.
+		\item df -lh: Sirve para mostrar las particiones del sistema.
+		\item top sirve para mostrar información del procesador y los núcleos.
+		\item apt-get update: Sirve para actualizar el comando apt-get, con el cual se pueden descargar aplicaciones desde su biblioteca.
+		\item apt-get install "nombre de aplicación": Instala en el sistema la aplicación deseada.
+		\item chmod xxx "archivo": Cambia los permisos de lectura, escritura y ejecución de un archivo a nivel usuario, grupo y general. En cada x se modificarán los permisos respectivamente para los niveles mencionados, y se modificarán en base al siguiente criterio: Para activar la lectura del archivo se sumará cuatro a la casilla del nivel deseado, si se desea activar la escritura, se sumará dos y si se quiere activar la ejecución se sumará uno, dando un máximo de siete y un mínimo de cero para cada nivel.
+	\end{enumerate}
+	\paragraph{\\Así, con estos comandos se puede checar información general del sistema, navegar a través de los directorios, crear y administrar archivos, así como descargar aplicaciones.}
+\end{document}
