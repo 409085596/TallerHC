@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}Uso b\IeC {\'a}sico de Linux}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Distribuciones de Linux}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Comandos}{5}{section.1.2}
+\contentsline {chapter}{\numberline {2}Introducci\IeC {\'o}n a LateX}{7}{chapter.2}
+\contentsline {chapter}{\numberline {3}Introducci\IeC {\'o}n a Python}{9}{chapter.3}
