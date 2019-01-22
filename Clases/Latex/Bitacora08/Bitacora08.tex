@@ -1,0 +1,38 @@
+\documentclass[letterpaper, 12pt, oneside]{article} %Para dar formato al documento
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\title{\Huge Bitácora 5 del Taller de Herramientas Computacionales}
+\author{Elías Jiménez Cruz, 409085596}
+\date{16/01/2019}
+
+\begin{document}
+	\maketitle
+	\paragraph{Volvimos a checar el ciclo while e if, con los cuales se dejaron 10 ejercicios de tarea a realizar. El primero era calcular el MCD de dos números, el segundo era calcular el tiempo en que se encuentra el objeto que es lanzado en el ejercicio de tiro vertical de la pelota, el tercero era convertir de grados Celsius a Farenheit y viceversa, el cuarto era dada una posición en la sucesión de Fibonacci, calcular su valor, el quinto era calcular la suma de los primeros n números, el sexto era calcular el promedio de 10 números, el séptimo era calcular el mismo promedio de diez números, pero también determinar el número más pequeño y el más grande, y por último, los últimos tres teníamos que idearlos nosotros, siempre y cuando tuvieran ciclo while e if.//Después vimos una nueva manera de imprimir valores en cadenas. Una copia del código la introduciré aquí:}
+	\begin{verbatim}
+	'''Elías Jiménez Cruz
+	409085596
+	Taller de herramientas computacionales
+	{aquí va una descripción del programa y lo que hace}'''
+	
+	x= 10.5
+	y= 1.0/3
+	z= 15.3
+	#x,y,z= 10.5,1.0/3,15.3
+	H= '''El punto en R3 es (x,y,z) = (%.2f,%g,%G)''' %(x,y,z)
+	print H
+	
+	G= '''El punto en R3 es (x,y,z) = ({laX:.2f},{laY:g},{laZ:G})''' .format(laX=x,laY=y,laZ=z)
+	print G
+	
+	#import math as m
+	#from math import sqrt
+	#from math import sqrt as s
+	
+	from math import *
+	x = input("Dame el número del cual quieres conocer su raíz: ")
+	print "La raíz cuadrada de %.2f es %f" %(x,sqrt(x))
+	\end{verbatim}
+\end{document}
