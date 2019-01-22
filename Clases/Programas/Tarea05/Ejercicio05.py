@@ -1,7 +1,6 @@
-def sumaDeNumeros(n):
-    contador = 0
-    suma = 0
-    while contador<n:
-        contador += 1
-        suma += contador
-    return suma
+def lsumaDeNumeros(n):
+    datos = [0,0]
+    while datos[0]<n:
+        datos[0] += 1
+        datos[1] += datos[0]
+    return datos[1]
