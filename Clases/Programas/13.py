@@ -19,3 +19,10 @@ def printR(l):
             return str(l.pop())
         else:
             return ""
+
+def printr(l):
+    if l:
+        print l[0],
+        printr(l[1:])
+    else:
+        None
