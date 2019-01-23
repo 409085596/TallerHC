@@ -1,0 +1,62 @@
+\documentclass[letterpaper, 12pt, oneside]{article} %Para dar formato al documento
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\title{\Huge Bitácora 9 del Taller de Herramientas Computacionales}
+\author{Elías Jiménez Cruz, 409085596}
+\date{17/01/2019}
+
+\begin{document}
+	\maketitle
+	\paragraph{Se revisaron los ejercicios encargados en la tarea del día anterior. Se aclararon dudas y dieron consejos. Se vio un nuevo ejercicio, en el cual se definía una función en la que se ingresaba un número, y si era par se dividía entre 2 y si era impar se multiplicaba por 3 y se le sumaba 1, tras lo cual se repetía la operación hasta que finalmente el número ingresado se redujera a 1. Esto claramente es una práctica de los comandos while e if. Aquí está la transcripción del código del ejercicio:}
+	\begin{verbatim}
+	def updown(x):
+		i = 0
+		while x != 1:
+				if x%2 == 0:
+				x=x/2
+			else:
+				x=3*x+1
+			i=i+1
+		return("Las veces que el proceso se repitio para que el numero se redujera a 1 fueron: %d" %(i))
+	\end{verbatim}
+	\paragraph{También checamos cómo importar comandos desde el sistema operativo para ser usados en Python. Sólo se trata de escribir en Idle el comando "from os import "comandos"", con los cuales se podrán utilizar en Linux desde Python. Después de esto vimos Latex, en el cual checamos arreglos como tablas, alineamientos y matrices. He aquí una transcripción:}
+	\begin{verbatim}
+	\section*{Matrices}
+	%\dots puntos suspensivos
+	%\vdots puntos suspensivos verticales
+	\[
+	\begin{bmatrix}
+	x_{2} & x_{3}\\
+	x_{4} & x_{6}
+	\end{bmatrix}
+	\]
+	\[
+	\begin{bmatrix}
+	x_{2} & x_{5} & \dots\\
+	x_{5} & x_{20} & \dots\\
+	\vdots & \vdots & \vdots
+	\end{bmatrix}
+	\]
+	$\sum$
+	\section*{Tablas}
+	\[
+	\begin{array}{|c|c|c|}
+	\hline
+	f(t) & F(s) & \mbox{remark}\\
+	\hline\hline
+	\delta(t) & 1 & \mbox{impulse function}\\
+	u(t) & \frac{1}{5} & \mbox{unit step function}\\
+	e^{at}u(t) & \frac{1}{s-a} & \mbox{one-side exponential }\\
+	\hline
+	\end{array}
+	\]
+	\section*{Alineamiento}
+	\begin{align*}
+	2x - 5y &= 8\\
+	2x - 9y &= -12\\
+	\end{align*}
+	\end{verbatim}
+\end{document}
