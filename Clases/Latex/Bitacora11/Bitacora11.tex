@@ -1,0 +1,81 @@
+\documentclass[letterpaper, 12pt, oneside]{article} %Para dar formato al documento
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\title{\Huge Bitácora 11 del Taller de Herramientas Computacionales}
+\author{Elías Jiménez Cruz, 409085596}
+\date{22/01/2019}
+
+\begin{document}
+	\maketitle
+	\paragraph{Se prosiguió revisando el tema de listas y el ciclo for. Se checaron dudas de la tarea y se revisaron nuevos temas. En particular, se dejó como tarea hacer un programa que calculara la suma superior y la inferior de un conjunto de áreas dado por la función -6x3+5x2+2x+12, evaluada en n intervalos cuyas distancias entre sí serían multiplicadas por la función de cada borde, a manera de calcular sumas de Rieman finitas. Para ello, el usuario debería ingresar los intervalos deseados y el intervalo de la función a evaluar.\\También se pasó a checar en Latex el uso de los documentos libro, en el que checamos cómo poner índices, cómo hacer capítulos y poner bibliografía, secciones y vínculos con hyperref. He aquí una transcripción:}
+	\begin{verbatim}
+	\documentclass{book}
+	%\usepackage[spanish]{babel}
+	\usepackage[utf8]{inputenc}
+	%\usepackage{biblatex}
+	\usepackage{hyperref}
+	
+	\title{Taller de Herramientas Computacionales}
+	\author{Elías Jiménez Cruz}
+	\date{17/Enero/2019}
+	
+	\begin{document}
+	\maketitle
+	%Aquí inicia el índice del contenido del texto.
+	\tableofcontents
+	\section*{Introducción} Este libro es para fortalecer 
+	el conocimiento de la materia de Taller de Herramientas 
+	Computacionales.
+	\url{www.google.com}
+	\hyperref[Google]{www.google.com}
+	
+	%Aquí inician los capítulos del libro.
+	\chapter{Uso básico de Linux}
+	\section{Distribuciones de Linux}
+	\section{Comandos}
+	\chapter{Introducción a LateX}
+	\chapter{Introducción a Python}
+		\begin{verbatim}
+		#!/usr/bin/python2.7
+		# -*- coding: utf-8 -*-
+		
+		'''Elías Jiménez Cruz
+		409085596
+		Taller de herramientas computacionales
+		{aquí va una descripción del programa y lo que hace}'''
+		
+		x= 10.5
+		y= 1.0/3
+		z= 15.3
+		#x,y,z= 10.5,1.0/3,15.3
+		H= '''El punto en R3 es (x,y,z) = (%.2f,%g,%G)''' %(x,y,z)
+		print H
+		
+		G= '''El punto en R3 es (x,y,z) = 
+		({laX:.2f},{laY:g},{laZ:G})''' 
+		.format(laX=x,laY=y,laZ=z)
+		print G
+		
+		#import math as m
+		#from math import sqrt
+		#from math import sqrt as s
+		
+		from math import *
+		x = input("Dame el número del cual quieres conocer su raíz: ")
+		print "La raíz cuadrada de %.2f es %f" %(x,sqrt(x))
+		end{verbatim}
+	\input{prueba.py}
+	\section*{Orientación a objetos}
+	
+		\begin{thebibliography}{9}
+			%\bibitem{Computación}
+			Autor blah!\\
+			\textit{cualquier cosa}
+			blah!
+		\end{thebibliography}
+	\end{document}
+	\end{verbatim}
+\end{document}

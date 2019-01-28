@@ -1,0 +1,93 @@
+\documentclass[letterpaper, 12pt, oneside]{article} %Para dar formato al documento
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\title{\Huge Bitácora 12 del Taller de Herramientas Computacionales}
+\author{Elías Jiménez Cruz, 409085596}
+\date{23/01/2019}
+
+\begin{document}
+	\maketitle
+	\paragraph{En esta clase seguimos reforzando el tema de listas y for. En especial, pasamos a checar cómo hacer una lista directamente con un ciclo for, sin tener que escribir todo los elementos. Básicamente sólo se escribe primero la condición o fórmula que va a tener cada elemento en términos de lo segundo que se escribe, que es una lista (que simplemente puede ser un range()). Así, si se quiere crear una lista de grados Farenheit desde una lista de grados Celsius basta con determinarla así: [i*1.8 + 32 for i in gradosC]. También podría ser posible hacer una lista de listas de esta manera, simplemente determinar primero el formato para después poner los elementos a ingresar en el formato: [[C,F] for C,F in zip(gradosC,gradosF)], donde zip es la función que permite discernir los elementos de las dos listas. Vimos cómo es posible guardar los elementos de una lista sin tener que declarar uno a uno los elementos a guardar, basta con que escribamos lista[x:y] para imprimir los elementos de lista desde la posición x a la y-1. Es posible hacer esto con las sublistas, sólo basta con poner el segundo índice. Para finalizar Python, realizamos el documento tablas, cuya transcripción es la siguiente:}
+	\begin{verbatim}
+	n=12; gradosC=[-5 + i*0.5 for i in range(n)]
+	gradosF=[i*1.8+32 for i in gradosC]
+	
+	ListaCombinada=[[C,F] for C,F in zip(gradosC,gradosF)]
+	print ListaCombinada
+	\end{verbatim}
+	\paragraph{Ahora pasamos a ver en Latex el uso de Beamer, que es una especie de powerpoint, un tipo de documento que permite hacer presentaciones en forma de diapositivas. Vimos como abrir diapositivas nuevas, como pasar de una diapositiva a otra con transblindshorizontal, cómo poner títulos en la diapositiva con frametitle y como poner temas predeterminados. He aquí la transcricpión de lo visto:}
+	\begin{verbatim}
+	\documentclass{beamer}
+	\usepackage{graphicx}
+	\usepackage[utf8]{inputenc}
+	%\usepackage[spanish]{babel}
+	\graphicspath{{../Imagenes/}}
+	%\usetheme{Antibes}
+	%\usetheme{AnnArbor}
+	%\usetheme{Berkeley}
+	%\usetheme{CambridgeUS}
+	%\usetheme{Goettingen}
+	%\usetheme{Hannover}
+	%\usetheme{Ilmenau}
+	%\usetheme{Berlin}
+	%\usetheme{Boadilla}
+	%\usetheme{Darmstadt}
+	\usetheme{Bergen}
+	
+	\def\insertauthorindicator{¿Quién?}
+	\def\insertdateindicator{Fecha}
+	\title{Taller de Herramientas Computacionales}
+	\author{Elías Jiménez Cruz}
+	\date{\today}
+	
+	\begin{document}
+	\maketitle
+	\begin{frame}
+	%\transboxin
+	\transblindshorizontal
+	\frametitle{Mi primera presentación en LaTeX}
+	\begin{center}
+	\includegraphics[scale=0.40]{EscudoFC.png}
+	\end{center}
+	\end{frame}
+	\begin{frame}
+	\frametitle{Segunda diapositiva}
+	Esta es mi segunda diapositiva
+	\end{frame}
+	\begin{frame}[fragile]
+	\begin{verbatim}
+	#!/usr/bin/python2.7
+	# -*- coding: utf-8 -*-
+	
+	'''Elías Jiménez Cruz
+	409085596
+	Taller de herramientas computacionales
+	{aquí va una descripción del programa y lo que hace}'''
+	
+	x= 10.5
+	y= 1.0/3
+	z= 15.3
+	#x,y,z= 10.5,1.0/3,15.3
+	H= '''El punto en R3 es (x,y,z) = (%.2f,%g,%G)''' %(x,y,z)
+	print H
+	
+	G= '''El punto en R3 es (x,y,z) =
+	({laX:.2f},{laY:g},{laZ:G})''' 
+	.format(laX=x,laY=y,laZ=z)
+	print G
+	
+	#import math as m
+	#from math import sqrt
+	#from math import sqrt as s
+	
+	from math import *
+	x = input("Dame el número del cual quieres conocer su raíz: ")
+	print "La raíz cuadrada de %.2f es %f" %(x,sqrt(x))
+	end{verbatim}
+	\end{frame}
+	\end{document}
+	\end{verbatim}
+\end{document}

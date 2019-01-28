@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Bitacora10.tex
-(./Bitacora10.tex
+**Bitacora11.tex
+(./Bitacora11.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -447,8 +447,8 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (./Bitacora10.aux)
-\openout1 = `Bitacora10.aux'.
+)) (./Bitacora11.aux)
+\openout1 = `Bitacora11.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -528,20 +528,20 @@ e
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-(./Bitacora10.aux) ) 
+(./Bitacora11.aux) ) 
 Here is how much of TeX's memory you used:
  2861 strings out of 494945
  35871 string characters out of 6181032
- 111969 words of memory out of 5000000
+ 100194 words of memory out of 5000000
  6133 multiletter control sequences out of 15000+600000
  6376 words of font info for 24 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,7n,35p,3417b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,7n,35p,1008b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Bitacora10.pdf (3 pages, 50815 bytes).
+Output written on Bitacora11.pdf (3 pages, 53465 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
